@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+    font-family: barlow;
+    margin: 0;
+}
+
+.nav{
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.207);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 75px;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.nav .middle a{
+    margin-left: 30px;
+}
+.nav .left{
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 35px;
+}
+.nav .left img{
+    width: 30px;
+    height: 30px;
+}
+.nav .right{
+    padding: 0 20px;
+}
+
+.input-section{
+    position: relative;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px green solid; */
+}
+.input-section svg{
+    width: 35px;
+    height: 35px;
+}
+.ad{
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ad #advertise{
+    color: #ffffff;
+    text-align: center;
+    width: 99%;
+    border-radius: 2px;
+    background-color: rgb(19, 102, 219);
+    animation: anime 1s infinite;
+    transition: 2s;
+    position: absolute;
+}
+@keyframes anime {
+    0%{
+        margin: 0;
+        transition: 3s;
+    }
+    60%{
+        margin-top: 5px;
+    }
+    100%{
+        margin: 0;
+    }
+}
+.ad #before{
+    text-decoration: line-through;
+    text-decoration-color: red;
+}
+
+.input-section input{
+    margin-right: 20px;
+    width: 400px;
+    color: black;
+    padding: 13px 16px;
+    border-radius: 17px;
+    border: 1.5px rgb(187, 187, 187) solid;
+}
+.input-section button{
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 20px;
+}
+.qwerty a{
+    text-decoration: none;
+    color: black;
+}
+.qwerty a:hover{
+    text-decoration: none;
+    color: rgb(203, 15, 15);
+}
+.qwerty{
+    line-height: 35px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: absolute;
+    padding: 15px 39px;
+    flex-direction: column;
+    top: 64%;
+    right: 30.96%;
+    z-index: 1;
+    display: none;
+    background-color: buttonface;
+}
+
+.visible{
+    display: flex;
+}
+.below-section{
+    display: flex;
+    justify-content: center;
+}
+.grid{
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid-item img:hover{
+    cursor: pointer;
+    filter: brightness(50%);
+}
+.grid-item img{
+    border-radius: 10px;
+    margin: 10px;
+    width: 200px;
+}

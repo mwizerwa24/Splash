@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="./images/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splash</title>
+</head>
+<body>
+<div class="body">
+
+    <div class="nav">
+        <a href="index.html"><div class="left">
+            <img src="./images/fav.png" alt="">
+            <h2>Splash</h2>
+        </div></a>
+
+        <div class="middle">
+            <a href="aboutus.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="../../Ex/Portifolio/index.html">Developers</a>
+        </div>
+        <div class="right">
+            <a href="">Sign In</a>
+        </div>
+    </div>
+
+    <a href="">
+        <div class="ad">
+            <div id="advertise">Discount On Our Monthly Partnership <span id="before">3.55$</span> / <span id="after">2.44$</span></div>
+        </div>
+    </a>
+    
+    <div class="all-input-section">
+        <div class="input-section">
+            <input placeholder="Search Wallpapers" type="text">
+            <button class="button">Categories <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none;"><g class="style-scope yt-icon"><path d="M12,15.7L5.6,9.4l0.7-0.7l5.6,5.6l5.6-5.6l0.7,0.7L12,15.7z" class="style-scope yt-icon"></path></g></svg></button>
+            <div class="qwerty">
+                <a href="football.html">Football</a>
+                <a href="gangster.html">Gangster</a>
+                <a href="nature.html">Nature</a>
+                <a href="quotes.html">Quotes</a>
+                <a href="cars.html">Cars</a>
+            </div>
+        </div>
+    </div>
+    <div class="below-section">
+        <div class="grid">
+            <a href=""><div class="grid-item"><img src="./images/17.jpg" alt=""></div></a>
+            <a href=""><div class="grid-item"><img src="./images/7.jpg" alt=""></div></a>
+            <a href=""><div class="grid-item"><img src="./images/11.jpg" alt=""></div></a>
+            <a href=""><div class="grid-item"><img src="./images/10.jpg" alt=""></div></a>
+            <a href=""><div class="grid-item"><img src="./images/15.jpg" alt=""></div></a>
+            <a href=""><div class="grid-item"><img src="./images/8.jpg" alt=""></div></a>
+            <a href=""><div class="grid-item"><img src="./images/5.jpg" alt=""></div></a>
+            <a href=""><div class="grid-item"><img src="./images/13.jpg" alt=""></div></a>
+            <a href=""><div class="grid-item"><img src="./images/16.jpg" alt=""></div></a>
+            <a href=""><div class="grid-item"><img src="./images/6.jpg" alt=""></div></a>
+            <a href=""><div class="grid-item"><img src="./images/9.jpg" alt=""></div></a>
+            <a href=""><div class="grid-item"><img src="./images/12.jpeg" alt=""></div></a>
+        </div>
+
+    </div>
+    <script src="./plugs/jquert.js"></script>
+    <script src="./plugs/brick.js"></script>
+    <script>
+        $('.grid').isotope({
+             itemSelector:'.grid-item'
+        });
+    </script>
+    <script>
+        var click = document.querySelector('.button') 
+        var visible = document.querySelector('.qwerty')
+
+        click.onclick = function(){
+            visible.classList.toggle('visible')
+        }
+    </script>
+</div>
+</body>
+</html>
